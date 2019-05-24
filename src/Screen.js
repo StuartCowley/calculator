@@ -1,12 +1,12 @@
 import React from "react";
 
-const NiceDisplay = props => {
+const Screen = props => {
   return (
     <div className="niceDisplayBox">
       <p>Current:</p>
-      <p>{props.total}</p>
+      <p>{props.temp}</p>
     </div>
   );
 };
 
-export default NiceDisplay;
+export default Screen;

@@ -1,12 +1,14 @@
 import React from "react";
 import Count from "./Count";
-import NiceDisplay from "./NiceDisplay";
-// import "./App.css";
+import Screen from "./Screen";
+import Operators from "./Operators";
+import CalcFullDisplay from "./CalcFullDisplay";
 
 class App extends React.Component {
   state = {
     display: 0,
-    total: 0
+    total: 0,
+    temp: 0
   };
 
   addButton = () => {
@@ -30,6 +32,13 @@ class App extends React.Component {
     console.log(this.state.total);
   };
 
+  // MOVED TO OPERATORS FILE
+  // poshClearButton = () => {};
+  // poshAddButton = () => {};
+  // poshSubButton = () => {};
+  // poshMultiplyButton = () => {};
+  // poshDivideButton = () => {};
+
   render() {
     let calc = (
       <div className="displayBar">
@@ -38,7 +47,7 @@ class App extends React.Component {
     );
     let niceCalc = (
       <div className="displayBar">
-        <NiceDisplay total={this.state.total} />
+        <Screen total={this.state.total} />
       </div>
     );
 
@@ -48,38 +57,13 @@ class App extends React.Component {
           {calc}
           <div id="buttons">
             <button onClick={this.addButton}> + </button>
-            <button onClick={() => this.subButton()}> - </button>
-            <button onClick={() => this.multiplyButton()}> * </button>
-            <button onClick={() => this.divideButton()}> / </button>
+            <button onClick={this.subButton}> - </button>
+            <button onClick={this.multiplyButton}> * </button>
+            <button onClick={this.divideButton}> / </button>
           </div>
         </div>
         <div id="container2">
-          <div id="poshCalc">
-            {niceCalc}
-            <div>
-              <button className="smallButton">7</button>
-              <button className="smallButton">8</button>
-              <button className="smallButton">9</button>
-              <button className="smallButton">%</button>
-            </div>
-            <div>
-              <button className="smallButton">4</button>
-              <button className="smallButton">5</button>
-              <button className="smallButton">6</button>
-              <button className="smallButton">x</button>
-            </div>
-            <div>
-              <button className="smallButton">1</button>
-              <button className="smallButton">2</button>
-              <button className="smallButton">3</button>
-              <button className="smallButton">+</button>
-            </div>
-            <div>
-              <button className="doubleButton">0</button>
-              <button className="smallButton">=</button>
-              <button className="smallButton">-</button>
-            </div>
-          </div>
+          <CalcFullDisplay temp={this.state.temp} />
         </div>
       </div>
     );

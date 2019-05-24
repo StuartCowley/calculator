@@ -13,7 +13,7 @@ body {
 
 button {
   width: 300px;
-  height: 160px;
+  height: 80px;
   font-size: 60px;
 }
 
@@ -61,6 +61,7 @@ code {
 
 .niceDisplayBox {
   width: 600px;
+  height: 160px;
   background-color: red;
   margin: 0 auto;
   align-content: center;
@@ -77,6 +78,11 @@ p {
   width: 600px;
   height: 480px;
   margin: auto;
+}
+
+.resetButton {
+  width: 600px;
+  height: 70px;
 }
 
 .smallButton {
