@@ -1,92 +1,83 @@
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  margin: 0px;
-  font-size: 50px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-button {
-  width: 300px;
-  height: 80px;
-  font-size: 60px;
-}
-
-#buttons {
-  display: flex;
-  justify-content: space-around;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-#container {
-  margin: auto 0;
-  align-content: center;
-  width: 100vw;
-  height: 30vh;
-  padding: 20px;
-}
-
-#container2 {
-  margin: auto 0;
-  align-content: center;
-  width: 100vw;
-  height: 50vh;
-  padding: 20px;
-}
-
-.displayBar {
-  /* width: 100vw; */
-}
-
-.displayBox {
-  /* width: 50vw; */
-  margin: 0 auto;
-  align-content: center;
-}
-
-.doubleButton {
-  width: 300px;
-  height: 80px;
-  font-size: 60px;
-}
-
-.niceDisplayBox {
-  width: 600px;
-  height: 160px;
-  background-color: red;
-  margin: 0 auto;
-  align-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-image: url('../src/img/blackboard.jpg');
+    background-size: cover;
 }
 
 p {
-  text-align: center;
-  /* width: 50vw; */
-  margin: auto 0;
-  align-content: center;
+    text-align: center;
+    margin: auto auto;
+    align-content: center;
+    font-size: 7vh;
 }
 
-#poshCalc {
-  width: 600px;
-  height: 480px;
-  margin: auto;
+
+/* Containers */
+
+#wholePage {
+    display: flex;
+    box-sizing: border-box;
+    height: 100vh;
 }
+
+#calcContainer {
+    height: 70vh;
+    width: 50vw;
+    margin: auto;
+}
+
+.calcScreen {
+    width: 50vw;
+    height: 20vh;
+    background-color: darkgreen;
+    margin: 0 auto;
+    align-content: center;
+}
+
+
+/* Buttons */
 
 .resetButton {
-  width: 600px;
-  height: 70px;
+    width: 50vw;
+    height: 10vh;
+    background-color: seashell;
+    outline: none;
 }
 
 .smallButton {
-  width: 150px;
-  height: 80px;
-  font-size: 60px;
+    width: 12.5vw;
+    height: 10vh;
+    background-color: seashell;
+    outline: none;
+}
+
+.doubleButton {
+    width: 25vw;
+    height: 10vh;
+    background-color: seashell;
+    outline: none;
+}
+
+
+/* CSS for basic experiment calculator, not used for main version */
+
+button {
+    width: 15vw;
+    height: 10vw;
+    font-size: 8vh;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.displayBox {
+    margin: 0 auto;
+    align-content: center;
 }
