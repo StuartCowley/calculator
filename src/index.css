@@ -23,6 +23,8 @@ p {
 }
 
 #calcContainer {
+    display: flex;
+    flex-wrap: wrap;
     height: 60vh;
     width: 50vw;
     margin: auto;
@@ -39,45 +41,10 @@ p {
     padding-right: 20px;
 }
 
-
-/* Buttons */
-
-.clearButton {
-    width: 25vw;
-    height: 10vh;
-    background-color: seashell;
-    outline: none;
-}
-
 .smallButton {
     width: 12.5vw;
     height: 10vh;
-    background-color: seashell;
-    outline: none;
-}
-
-.doubleButton {
-    width: 25vw;
-    height: 10vh;
-    background-color: seashell;
-    outline: none;
-}
-
-
-/* CSS for basic experiment calculator, not used for main version */
-
-button {
-    width: 15vw;
-    height: 10vw;
     font-size: 8vh;
-}
-
-#buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.displayBox {
-    margin: 0 auto;
-    align-content: center;
+    background-color: seashell;
+    outline: none;
 }
